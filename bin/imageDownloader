@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var imageDownloader = require('../')
+var program = require('commander');
+
+program
+  .option('-d, --foldername <folderName>', 'destination folder', '')
+  .parse(process.argv);
+
+program.args.forEach(function (pageUrl) {
+  console.log('Getting data from url...');
+  imageDownloader({
+    pageUrl: pageUrl,
+    folderName: program.foldername
+  });
+});

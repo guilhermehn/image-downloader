@@ -1,0 +1,21 @@
+{
+  "name": "imgd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "imageDownloader": "./bin/imageDownloader"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "cheerio": "^0.18.0",
+    "commander": "^2.7.1",
+    "progress": "^1.1.8",
+    "request": "^2.53.0"
+  }
+}
